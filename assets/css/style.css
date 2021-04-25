@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body css */
+body {
+  font-family: Arial;
+  background: black;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-color: #96C2E5;
+  padding:30px;
+  text-align:center;
+}
+
+
+/* result of storage and the output */
+#result{
+	text-align:center;
+	position: relative;
+	color: #3E90F9;
+    font-size:25px;
+	padding:20px;
+	font-family: BaskervilleFull;
+
+}
+#textResult{
+	color: #3E90F9;
+	font-size:40px;
+    font-family: BaskervilleFull;
+	text-shadow: 3px 3px 7px black;
+}
+
+/* Create form display */
+form {
+	text-align:center;
+	padding:10px;
+	margin:30px;
+	animation-name: mymove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    border-radius: 50px;
+}
+
+input{
+	margin:10px;
+	font-size:15px;
+}
+
+
+
+/* selection display */
+#selects{
+	text-align:center;
+	position: relative;
+	border-radius: 25px;
+	border: 20px ;
+	font-size:20px;
+}
+
+#selects select{
+	text-align:center;
+	font-size:15px;
+	width: 300px;
+	background: #AADAFF; 
+	padding:auto;
+	border: 20px ;
+}
+
+/* change the background of form color*/
+@keyframes mymove {
+  from {background-color: rgba(0,0,0,0.5); }
+  to {background-color: rgba(255,255,255,0.5);}  
+}
+
+
+/* shows all the result after user input*/
+#bottom{
+	border-style:double;
+	border-color:#ccebff;
+	border-radius:3px;
+	border-width: 10px 10px;
+	background:rgba(124,197,227,0.8)
+	padding:50px;
+  }
+
+
+
+
+/* heading setting */
+h1{
+	text-align:center;
+    padding:20px;
+	font-family: BaskervilleFull;
+	font-style: italic;
+    color:white;
+    margin-top:100px;
+    font-size:20pt;
+	text-shadow: 3px 3px 7px black;
+}
+
+h2{
+	color:white;
+	text-align:center;
+	font-size:16pt;
+}
+
+h3{
+	color:white;
+	text-align:center;
+	font-size:16pt;
+	text-decoration: underline;
+}
+
+h4{
+	color: #3E90F9;
+	font-size:40px;
+    font-family: BaskervilleFull;
+	text-shadow: 3px 3px 7px black;
+}
+
+p{
+	color:#D5D1FF;
+	font-size:20pt;
+	margin:30px;
+	text-align:center;	
+}
+
+/* video setting and animation */
+video{
+	width:700px;
+	height:auto;
+
+}
+
+/* image setting and animation */
+img{
+	height:auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;	
+	height:auto;
+}
+@keyframes zoom {
+  from {width: 500px; }
+  to {width: 600px;}  
+}
+
+
+
+/* animation for the slideshow, show all the movie poster */
+#slideshow{
+	animation-name: zoom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;  
+
+}
+
+
+/* button setting */
+#btnsubmit, #refresh {
+	font-size: 15px;
+	border-radius: 20px;
+	margin:auto;
+	width:auto;
+}
+
+/* button setting, make sure the button is always appear at the top */
+#cleardata{
+	position: absolute;
+	float: right;
+	right:0px;
+	top:0px;
+	padding:10px;
+}
+
+/* animation of the star falling down */
+.star {
+	color: white;
+	font-size: 16px;
+	font-family: Arial;
+	text-shadow: 0 0 1px white;
+}
+
+@-webkit-keyframes starsdown{
+	0%{
+		top:10%
+	}
+	100%{
+		top:110%
+	}
+}
+
+@keyframes starsmove{
+	0%{
+		transform:translateX(30px)
+		}
+
+	100%{
+		transform:translateX(40px)
+		}
+	}
+
+.star{
+	position:fixed;
+	top:-10%;
+	z-index:-999;
+	animation-name:starsdown,stars-shake;
+	animation-duration:10s,3s;
+	animation-timing-function:linear,ease-in-out;
+	animation-iteration-count:infinite,infinite;
+	animation-delay:0s,0s}.star:nth-of-type(1){left:10%;
+	animation-delay:8s,.5s}.star:nth-of-type(2){left:30%;
+	animation-delay:2s,3s}.star:nth-of-type(3){left:50%;
+	animation-delay:1s,8s}.star:nth-of-type(4){left:90%;
+	animation-delay:3s,1.5s
+}
+
+
+
